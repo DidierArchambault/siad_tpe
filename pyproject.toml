@@ -1,0 +1,20 @@
+[project]
+name = "tp-siad"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "DidierArchambault",email = "didier.archambault@cima.ca"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "amplpy (>=0.16.0,<0.17.0)",
+    "numpy (>=2.4.2,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "tp_siad", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
